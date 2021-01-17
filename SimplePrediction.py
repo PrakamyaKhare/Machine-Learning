@@ -30,7 +30,7 @@ def predict(x,w,b):
 	y = 0
 	weighted_sum = 0
 	for i in range(len(x)):
-		weighted_sum += x[i]+w[i]
+		weighted_sum += x[i]*w[i]
 	weighted_sum += b
 	print("Weighte sum = ",weighted_sum)
 	y = sigmoid(weighted_sum)
